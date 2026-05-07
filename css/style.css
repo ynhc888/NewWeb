@@ -658,4 +658,39 @@ main {
     .products-tabs {
         flex-wrap: wrap;
     }
+
+    .products-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .field-card {
+        grid-column: span 1;
+    }
+
+    .field-card .product-image {
+        height: 200px;
+    }
+
+    .nav-links a {
+        padding: 12px 20px;
+        text-align: center;
+    }
+
+    .navbar .container {
+        height: 70px;
+        gap: 20px;
+    }
+
+    .logo-image {
+        height: 50px;
+    }
+
+    main {
+        padding-top: 70px;
+    }
+
+    .hero {
+        padding: 100px 0;
+    }
 }
