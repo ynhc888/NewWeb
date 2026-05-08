@@ -229,8 +229,8 @@ main {
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 35px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
 }
 
 .service-card {
@@ -304,7 +304,9 @@ main {
 .products-tabs {
     display: flex;
     justify-content: center;
-    gap: 25px;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
     margin-bottom: 50px;
 }
 
@@ -331,20 +333,25 @@ main {
 
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
 .field-card {
-    grid-column: span 2;
+    grid-column: span 4;
+    width: 100%;
 }
 
 .field-card .product-image {
+    width: 100%;
     height: 350px;
+    border-radius: 16px;
 }
 
 .field-card .product-image img {
-    object-fit: cover !important;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .product-card {
@@ -685,21 +692,34 @@ main {
         height: 250px;
     }
 
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
     .products-tabs {
         flex-wrap: wrap;
     }
 
     .products-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 20px;
     }
 
     .field-card {
-        grid-column: span 1;
+        grid-column: span 2;
+        width: 100%;
     }
 
     .field-card .product-image {
+        width: 100%;
         height: 200px;
+    }
+
+    .field-card .product-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
     }
 
     .nav-links a {
